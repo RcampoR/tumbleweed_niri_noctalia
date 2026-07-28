@@ -1,0 +1,130 @@
+[33mcommit 99190e5d7eba769a591628325b27e9a2ad52753e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Ronaldo Campo <rcampor@localhost.localdomain>
+Date:   Tue Jul 28 14:57:48 2026 -0500
+
+    Respaldo automático — 2026-07-28
+
+ .gitignore                                               |   33 [32m+[m
+ LICENSE                                                  |   21 [32m+[m
+ README.md                                                |   98 [32m+[m
+ ROADMAP.md                                               |   36 [32m+[m
+ backup.sh                                                |  370 [32m++[m
+ config/bash/.bashrc                                      |   33 [32m+[m
+ config/gtk-3.0/bookmarks                                 |    1 [32m+[m
+ config/gtk-4.0/gtk.css                                   |    1 [32m+[m
+ config/gtk-4.0/noctalia.css                              |  103 [32m+[m
+ config/kitty/kitty.conf                                  |   73 [32m+[m
+ config/mimeapps.list                                     |   15 [32m+[m
+ config/niri/config.kdl                                   |  729 [32m++++[m
+ config/niri/noctalia.kdl                                 |   35 [32m+[m
+ config/noctalia/palettes/noctalia-wallpaper-mc.json      |  124 [32m+[m
+ config/thunar/accels.scm                                 |  126 [32m+[m
+ config/thunar/uca.xml                                    |   15 [32m+[m
+ config/vscodium/History/-192b28d8/RyQz.json              |  124 [32m+[m
+ config/vscodium/History/-192b28d8/entries.json           |    1 [32m+[m
+ config/vscodium/History/-1fe9e3f6/ER6b.service           |    6 [32m+[m
+ config/vscodium/History/-1fe9e3f6/entries.json           |    1 [32m+[m
+ config/vscodium/History/-2d88fee8/aQ5b.md                |  698 [32m++++[m
+ config/vscodium/History/-2d88fee8/entries.json           |    1 [32m+[m
+ config/vscodium/History/-2dca5226/aW7R.timer             |    9 [32m+[m
+ config/vscodium/History/-2dca5226/entries.json           |    1 [32m+[m
+ config/vscodium/History/-346c5cca/6Z8x.kdl               |  672 [32m++++[m
+ config/vscodium/History/-346c5cca/79Tq.kdl               |  685 [32m++++[m
+ config/vscodium/History/-346c5cca/9lCO.kdl               |  632 [32m++++[m
+ config/vscodium/History/-346c5cca/CIQb.kdl               |  697 [32m++++[m
+ config/vscodium/History/-346c5cca/HIEa.kdl               |  722 [32m++++[m
+ config/vscodium/History/-346c5cca/J967.kdl               |  722 [32m++++[m
+ config/vscodium/History/-346c5cca/Jax8.kdl               |  707 [32m++++[m
+ config/vscodium/History/-346c5cca/KAIK.kdl               |  698 [32m++++[m
+ config/vscodium/History/-346c5cca/KGZ3.kdl               |  684 [32m++++[m
+ config/vscodium/History/-346c5cca/LHxF.kdl               |  707 [32m++++[m
+ config/vscodium/History/-346c5cca/POvV.kdl               |  709 [32m++++[m
+ config/vscodium/History/-346c5cca/QScX.kdl               |  707 [32m++++[m
+ config/vscodium/History/-346c5cca/R1St.kdl               |  707 [32m++++[m
+ config/vscodium/History/-346c5cca/Rw4B.kdl               |  672 [32m++++[m
+ config/vscodium/History/-346c5cca/SiCo.kdl               |  670 [32m++++[m
+ config/vscodium/History/-346c5cca/Wq6a.kdl               |  690 [32m++++[m
+ config/vscodium/History/-346c5cca/XJGU.kdl               |  729 [32m++++[m
+ config/vscodium/History/-346c5cca/cDt7.kdl               |  668 [32m++++[m
+ config/vscodium/History/-346c5cca/cV1g.kdl               |  672 [32m++++[m
+ config/vscodium/History/-346c5cca/ctFh.kdl               |  690 [32m++++[m
+ config/vscodium/History/-346c5cca/entries.json           |    1 [32m+[m
+ config/vscodium/History/-346c5cca/iEcr.kdl               |  693 [32m++++[m
+ config/vscodium/History/-346c5cca/iHze.kdl               |  702 [32m++++[m
+ config/vscodium/History/-346c5cca/ijRe.kdl               |  722 [32m++++[m
+ config/vscodium/History/-346c5cca/nNuo.kdl               |  690 [32m++++[m
+ config/vscodium/History/-346c5cca/nhYH.kdl               |  632 [32m++++[m
+ config/vscodium/History/-346c5cca/qa4H.kdl               |  631 [32m++++[m
+ config/vscodium/History/-346c5cca/roT7.kdl               |  673 [32m++++[m
+ config/vscodium/History/-346c5cca/taQV.kdl               |  698 [32m++++[m
+ config/vscodium/History/-346c5cca/wXBl.kdl               |  632 [32m++++[m
+ config/vscodium/History/-346c5cca/y2cp.kdl               |  690 [32m++++[m
+ config/vscodium/History/-346c5cca/yZzu.kdl               |  717 [32m++++[m
+ config/vscodium/History/-346c5cca/zL4z.kdl               |  697 [32m++++[m
+ config/vscodium/History/-346c5cca/ziAd.kdl               |  707 [32m++++[m
+ config/vscodium/History/-346c5cca/zwYd.kdl               |  717 [32m++++[m
+ config/vscodium/History/-34e6e02d/ONlO.md                |  489 [32m+++[m
+ config/vscodium/History/-34e6e02d/SD1n.md                |  507 [32m+++[m
+ config/vscodium/History/-34e6e02d/UODi.md                |  548 [32m+++[m
+ config/vscodium/History/-34e6e02d/XMZp.md                |  532 [32m+++[m
+ config/vscodium/History/-34e6e02d/ekG1.md                |  460 [32m+++[m
+ config/vscodium/History/-34e6e02d/entries.json           |    1 [32m+[m
+ config/vscodium/History/-34e6e02d/oh9i.md                |  588 [32m++++[m
+ config/vscodium/History/-4b32616c/LWvR.json              |    4 [32m+[m
+ config/vscodium/History/-4b32616c/TPh0.json              |    3 [32m+[m
+ config/vscodium/History/-4b32616c/entries.json           |    1 [32m+[m
+ config/vscodium/History/-4b32616c/hPUI.json              |    3 [32m+[m
+ config/vscodium/History/-4b32616c/rVo6.json              |    3 [32m+[m
+ config/vscodium/History/-4b32616c/wnsq.json              |    2 [32m+[m
+ config/vscodium/History/-58fa2739/5ExW                   |  312 [32m++[m
+ config/vscodium/History/-58fa2739/9Z1N                   |  312 [32m++[m
+ config/vscodium/History/-58fa2739/BHfh                   |  313 [32m++[m
+ config/vscodium/History/-58fa2739/entries.json           |    1 [32m+[m
+ config/vscodium/History/-58fa2739/toHi                   |  313 [32m++[m
+ config/vscodium/History/-75cbba18/entries.json           |    1 [32m+[m
+ config/vscodium/History/-75cbba18/xo0P.json              |   15 [32m+[m
+ config/vscodium/History/-775b8fc8/MA4w.sh                |  106 [32m+[m
+ config/vscodium/History/-775b8fc8/entries.json           |    1 [32m+[m
+ config/vscodium/History/12e9b2f5/OnFW.R                  |  344 [32m++[m
+ config/vscodium/History/12e9b2f5/adMM.R                  |   45 [32m+[m
+ config/vscodium/History/12e9b2f5/entries.json            |    1 [32m+[m
+ config/vscodium/History/12e9b2f5/ev44.R                  |  262 [32m++[m
+ config/vscodium/History/12e9b2f5/gfyV.R                  |   15 [32m+[m
+ config/vscodium/History/3bb7c8e4/1zDx.R                  |  310 [32m++[m
+ config/vscodium/History/3bb7c8e4/Id3C.R                  |   15 [32m+[m
+ config/vscodium/History/3bb7c8e4/Ty1Z.R                  |  243 [32m++[m
+ config/vscodium/History/3bb7c8e4/entries.json            |    1 [32m+[m
+ config/vscodium/History/3bb7c8e4/qigy.R                  |  282 [32m++[m
+ config/vscodium/History/3bb7c8e4/qrWP.R                  |   19 [32m+[m
+ config/vscodium/History/3d50cc63/RhQb.qmd                |   54 [32m+[m
+ config/vscodium/History/3d50cc63/entries.json            |    1 [32m+[m
+ config/vscodium/History/3d50cc63/odhx.qmd                |   54 [32m+[m
+ config/vscodium/History/3d50cc63/pwH2.qmd                |   68 [32m+[m
+ config/vscodium/History/7edc3299/clqy.csv                |   21 [32m+[m
+ config/vscodium/History/7edc3299/entries.json            |    1 [32m+[m
+ config/vscodium/History/7edc3299/wNoI.csv                |   21 [32m+[m
+ config/vscodium/chatLanguageModels.json                  |    1 [32m+[m
+ config/vscodium/globalStorage/state.vscdb                |  Bin [31m0[m -> [32m303104[m bytes
+ config/vscodium/globalStorage/state.vscdb.backup         |  Bin [31m0[m -> [32m303104[m bytes
+ config/vscodium/globalStorage/storage.json               |   92 [32m+[m
+ config/vscodium/keybindings.json                         |   15 [32m+[m
+ config/vscodium/settings.json                            |    4 [32m+[m
+ .../vscodium/workspaceStorage/1785262852056/state.vscdb  |  Bin [31m0[m -> [32m24576[m bytes
+ .../ms-python.python/pythonrc.py                         |   88 [32m+[m
+ .../8e9f3eb948b8abe5ae427f0137d47497/state.vscdb         |  Bin [31m0[m -> [32m73728[m bytes
+ .../8e9f3eb948b8abe5ae427f0137d47497/state.vscdb.backup  |  Bin [31m0[m -> [32m73728[m bytes
+ .../8e9f3eb948b8abe5ae427f0137d47497/workspace.json      |    3 [32m+[m
+ .../ms-python.python/pythonrc.py                         |   88 [32m+[m
+ .../b5f137f91ef32309693aab179adbe972/state.vscdb         |  Bin [31m0[m -> [32m69632[m bytes
+ .../b5f137f91ef32309693aab179adbe972/state.vscdb.backup  |  Bin [31m0[m -> [32m69632[m bytes
+ .../b5f137f91ef32309693aab179adbe972/workspace.json      |    3 [32m+[m
+ .../cb22c2e48c685cfde09e2a9e2d910a02/state.vscdb         |  Bin [31m0[m -> [32m24576[m bytes
+ .../cb22c2e48c685cfde09e2a9e2d910a02/state.vscdb.backup  |  Bin [31m0[m -> [32m24576[m bytes
+ .../cb22c2e48c685cfde09e2a9e2d910a02/workspace.json      |    3 [32m+[m
+ system/hostnamectl.txt                                   |   17 [32m+[m
+ system/kernel.txt                                        |    3 [32m+[m
+ system/packages_flatpak.txt                              |   13 [32m+[m
+ system/packages_rpm.txt                                  | 4260 [32m+++++++++++++++++++++++[m
+ system/repositories.txt                                  |   10 [32m+[m
+ system/wayland_env.txt                                   |    5 [32m+[m
+ 123 files changed, 36973 insertions(+)
