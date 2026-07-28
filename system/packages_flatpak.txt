@@ -1,0 +1,13 @@
+app.zen_browser.zen	1.21.9b	stable
+com.github.tchx84.Flatseal	2.4.1	stable
+com.heroicgameslauncher.hgl	v2.22.0	stable
+com.nuclearplayer.Nuclear	1.40.2	stable
+com.stremio.Stremio	1.1.4	stable
+com.valvesoftware.Steam	1.0.0.85	stable
+com.vysp3r.ProtonPlus	0.5.22	stable
+io.gitlab.metadatacleaner.metadatacleaner	4.0.0	stable
+org.kde.kdenlive	26.04.3	stable
+org.localsend.localsend_app	1.17.0	stable
+org.onlyoffice.desktopeditors	9.4.0	stable
+org.qgis.qgis	4.2.0	stable
+org.zotero.Zotero	9.0.6	stable

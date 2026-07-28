@@ -1,0 +1,15 @@
+[Default Applications]
+text/plain=code.desktop
+application/pdf=org.gnome.Papers.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=org.onlyoffice.desktopeditors.desktop
+image/jpeg=org.gnome.Loupe.desktop
+image/png=org.gnome.Loupe.desktop
+
+[Added Associations]
+text/plain=codium.desktop;code.desktop;
+application/pdf=org.gnome.Papers.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=org.onlyoffice.desktopeditors.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+image/png=org.gnome.Loupe.desktop;
+application/x-shellscript=codium.desktop;
+text/markdown=codium.desktop;

@@ -1,0 +1,6 @@
+[Unit]
+Description=Copia de seguridad semanal del HOME
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/copia-seguridad

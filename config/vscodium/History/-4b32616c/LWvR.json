@@ -1,0 +1,4 @@
+{
+    "twinny.embeddingIgnoredGlobs": [],
+    "security.workspace.trust.untrustedFiles": "open"
+}

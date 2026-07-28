@@ -1,0 +1,312 @@
+# Default config for sway
+#
+# Copy this to ~/.config/sway/config and edit it to your liking.
+#
+# Read `man 5 sway` for a complete reference.
+
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+# Your preferred terminal emulator
+set $term kitty
+# Your preferred application launcher
+
+
+##### MENU WOFI ####
+
+set $menu pkill -x wofi || wofi --show drun --allow-images
+
+# Variables para xdg-desktop-portal
+exec uwsm finalize
+
+### Output configuration
+#
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+output * bg /home/rcampor/Imágenes/fondos/Debian_BlueSpace__3840x2160.png fill
+#
+# Example configuration:
+#
+#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+#
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+
+### Input configuration
+#
+# Example configuration:
+#
+   input type:touchpad {
+       dwt enabled
+       tap enabled
+       natural_scroll enabled
+       middle_emulation enabled
+   }
+
+   input type:pointer {
+       natural_scroll enabled
+   } 
+
+
+   input type:keyboard {
+       xkb_layout "latam"
+  }
+#
+# You can also configure each device individually.
+# Read `man 5 sway-input` for more information about this section.
+
+### Key bindings
+#
+# Basics:
+#
+    # Start a terminal
+    bindsym $mod+Return exec $term
+
+    # Kill focused window
+    bindsym $mod+Shift+q kill
+
+    # Start your launcher
+    bindsym $mod+d exec $menu
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+#
+# Moving around:
+#
+    # Move your focus around
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    # Or use $mod+[up|down|left|right]
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # Move the focused window with the same, but add Shift
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+    # Ditto, with arrow keys
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+#
+# Workspaces:
+#
+    # Switch to workspace
+    bindsym $mod+1 workspace number 1
+    bindsym $mod+2 workspace number 2
+    bindsym $mod+3 workspace number 3
+    bindsym $mod+4 workspace number 4
+    bindsym $mod+5 workspace number 5
+    bindsym $mod+6 workspace number 6
+    bindsym $mod+7 workspace number 7
+    bindsym $mod+8 workspace number 8
+    bindsym $mod+9 workspace number 9
+    bindsym $mod+0 workspace number 10
+    # Move focused container to workspace
+    bindsym $mod+Shift+1 move container to workspace number 1
+    bindsym $mod+Shift+2 move container to workspace number 2
+    bindsym $mod+Shift+3 move container to workspace number 3
+    bindsym $mod+Shift+4 move container to workspace number 4
+    bindsym $mod+Shift+5 move container to workspace number 5
+    bindsym $mod+Shift+6 move container to workspace number 6
+    bindsym $mod+Shift+7 move container to workspace number 7
+    bindsym $mod+Shift+8 move container to workspace number 8
+    bindsym $mod+Shift+9 move container to workspace number 9
+    bindsym $mod+Shift+0 move container to workspace number 10
+    # Note: workspaces can have any name you want, not just numbers.
+    # We just use 1-10 as the default.
+#
+# Layout stuff:
+#
+    # You can "split" the current object of your focus with
+    # $mod+b or $mod+v, for horizontal and vertical splits
+    # respectively.
+    bindsym $mod+b splith
+    bindsym $mod+v splitv
+
+    # Switch the current container between different layout styles
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+
+    # Make the current focus fullscreen
+    bindsym $mod+f fullscreen
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym $mod+Shift+space floating toggle
+
+    # Swap focus between the tiling area and the floating area
+    bindsym $mod+space focus mode_toggle
+
+    # Move focus to the parent container
+    bindsym $mod+a focus parent
+#
+# Scratchpad:
+#
+    # Sway has a "scratchpad", which is a bag of holding for windows.
+    # You can send windows there and get them back later.
+
+    # Move the currently focused window to the scratchpad
+    bindsym $mod+Shift+minus move scratchpad
+
+    # Show the next scratchpad window or hide the focused scratchpad window.
+    # If there are multiple scratchpad windows, this command cycles through them.
+    bindsym $mod+minus scratchpad show
+#
+# Resizing containers:
+#
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    # Ditto, with arrow keys
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+#
+# Utilities:
+#
+    # Special keys to adjust volume via PulseAudio
+   bindsym --locked XF86AudioMute exec ~/.local/bin/volume.sh set-sink-mute @DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec ~/.local/bin/volume.sh set-sink-volume @DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec ~/.local/bin/volume.sh set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+
+    # Special keys to control media via playerctl
+    bindsym --locked XF86AudioPlay exec playerctl play-pause
+    bindsym --locked XF86AudioPause exec playerctl play-pause
+    bindsym --locked XF86AudioPrev exec playerctl previous
+    bindsym --locked XF86AudioNext exec playerctl next
+    bindsym --locked XF86AudioStop exec playerctl stop
+
+# ATAJOS MUSICA
+bindsym F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym F1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+    # Special keys to adjust brightness via brightnessctl
+   bindsym --locked XF86MonBrightnessDown exec ~/.local/bin/brightness.sh set 5%-
+bindsym --locked XF86MonBrightnessUp exec ~/.local/bin/brightness.sh set +5%
+
+    # Special key to take a screenshot with grim
+# ------------------------
+# Capturas de pantalla
+# ------------------------
+
+# Pantalla completa
+bindsym Print exec sh -c 'FILE="$HOME/Imágenes/Capturas/$(date +%F_%H-%M-%S).png"; grim "$FILE" && notify-send -i "$FILE" "📸 Captura guardada" "$(basename "$FILE")"'
+
+# Selección de área
+bindsym Shift+Print exec sh -c 'FILE="$HOME/Imágenes/Capturas/$(date +%F_%H-%M-%S).png"; grim -g "$(slurp)" "$FILE" && notify-send -i "$FILE" "📸 Captura guardada" "$(basename "$FILE")"'
+
+# Pantalla completa al portapapeles
+bindsym Ctrl+Print exec sh -c 'grim - | wl-copy && notify-send "📋 Captura copiada" "Pantalla completa copiada al portapapeles"'
+
+# Área al portapapeles
+bindsym Ctrl+Shift+Print exec sh -c 'grim -g "$(slurp)" - | wl-copy && notify-send "📋 Captura copiada" "Selección copiada al portapapeles"'
+
+# Editar inmediatamente
+bindsym Mod1+Print exec sh -c 'grim -g "$(slurp)" - | swappy -f -'
+
+
+
+########## MENU ENERGIA ################
+
+bindsym Ctrl+KP_Multiply exec pkill -x wlogout || wlogout
+
+######## BLOQUEO PANTALLA #############
+
+bindsym Ctrl+KP_Divide exec swaylock -f
+
+######## CURSOR #######
+
+seat seat0 xcursor_theme Bibata-Modern-Classic 35
+
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+#bar {
+  #  position top
+   # mode hide
+  #  hidden_state hide
+  #  modifier Mod4
+
+    # When the status_command prints a new line to stdout, swaybar updates.
+    # The default just shows the current date and time.
+ #   status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+
+ #   colors {
+  #      statusline #ffffff
+  #      background #323232
+   #     inactive_workspace #32323200 #32323200 #5c5c5c
+  #  }
+#}
+
+
+# Grosor del borde (aquí lo ponemos más grueso, 4px)
+default_border pixel 4
+
+# Separación entre ventanas (Gaps)
+gaps inner 6
+gaps outer 0
+
+# Colores de la ventana (Client colors)
+# Formato: client.<clase> <borde> <fondo> <texto> <indicador> <hijo>
+# Usaremos un azul oscuro elegante (#1e3a8a)
+client.focused #3b82f6 #3b82f6 #ffffff #93c5fd #3b82f6
+client.focused #3b82f6 #3b82f6 #ffffff #93c5fd #3b82f6
+client.unfocused #222222 #222222 #888888 #292d2e #222222
+
+exec_always "pkill -x waybar; exec waybar"
+
+
+exec_always pkill -x wob
+exec_always sh -c "mkfifo -m 644 /tmp/wobpipe 2>/dev/null; tail -f /tmp/wobpipe | wob"
+
+#exec_always sh -c 'pkill -x swaync; exec swaync -c ~/.config/swaync/config.json -s ~/.config/swaync/style.css'
+exec_always "pkill -x swayidle; exec swayidle -w timeout 300 'swaylock -f' timeout 500 'systemctl suspend' before-sleep 'swaylock -f'"
+# PORTAPAPELES
+exec_always wl-paste --type text --watch cliphist store -max-items 30
+exec_always wl-paste --type image --watch cliphist store -max-items 30
+bindsym Ctrl+ntilde exec pkill -x wofi || bash -c 'cliphist list | wofi --dmenu | cliphist decode | wl-copy'
+# MONITOR BTOP SISTEMA
+bindsym Shift+Escape exec kitty -e btop
+
+
+
+
+include /etc/sway/config.d/*

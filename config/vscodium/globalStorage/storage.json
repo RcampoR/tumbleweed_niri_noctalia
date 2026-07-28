@@ -1,0 +1,92 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "5bb6e136181fe3288db5ce3c100f7acc0f8b0e5831a2988ec9249ea4296d6193",
+    "telemetry.devDeviceId": "8fa45f05-9939-4fea-9ce5-74d36db3cca9",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/rcampor/Descargas/julieth"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1785262852056"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/rcampor/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/Proton-CachyOS%20Latest": "__default__profile__",
+            "file:///home/rcampor/Proyectos/proyectos_biologicos/peces/diversidad_peces_guartinajas": "__default__profile__",
+            "file:///home/rcampor/Descargas/julieth": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1785262852056": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#121314",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#bfbfbf",
+            "background": "#121314",
+            "editorBackground": "#121314",
+            "titleBarBackground": "#191a1b",
+            "titleBarBorder": "#2a2b2c",
+            "activityBarBackground": "#191a1b",
+            "activityBarBorder": "#2a2b2c",
+            "sideBarBackground": "#191a1b",
+            "sideBarBorder": "#2a2b2c",
+            "statusBarBackground": "#191a1b",
+            "statusBarBorder": "#2a2b2c",
+            "statusBarNoFolderBackground": "#191a1b"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/rcampor/.config/VSCodium/Backups/1785262852056",
+            "uiState": {
+                "mode": 1,
+                "x": 16,
+                "y": 10,
+                "width": 936,
+                "height": 1168
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 276,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "cb22c2e48c685cfde09e2a9e2d910a02": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "8e9f3eb948b8abe5ae427f0137d47497": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "b5f137f91ef32309693aab179adbe972": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}

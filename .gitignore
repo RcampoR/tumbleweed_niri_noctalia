@@ -1,0 +1,33 @@
+# ── Nunca versionar información sensible ────────────────────────────────
+# Esta lista es una red de seguridad adicional: backup.sh ya excluye estas
+# rutas activamente durante el rsync, pero mantenerlas también aquí evita
+# que un `git add -A` accidental las incluya si algún día se copian a mano.
+
+config/**/.ssh/
+config/**/.gnupg/
+config/**/.cache/
+config/**/keyrings/
+config/**/.mozilla/
+config/**/.var/
+config/**/gh/
+config/**/github-copilot/
+
+# Certificados, claves y tokens, sea cual sea su ubicación
+*.pem
+*.key
+*.crt
+*.p12
+*.gpg
+*.asc
+id_rsa*
+id_ed25519*
+*token*
+*secret*
+*credentials*
+
+# Logs locales del script
+.backup.log
+
+# Artefactos habituales del sistema operativo
+*.swp
+.DS_Store

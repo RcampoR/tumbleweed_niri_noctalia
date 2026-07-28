@@ -1,0 +1,21 @@
+﻿fecha,familia,genero,especie,abundancia,ambiente,Muestreo
+11/07/2026,Characidae,Astyanax,Astyanax sp1,7,Lago,M1
+12/07/2026,Cichlidae,Oreochromis,Oreochromis niloticus,1,Lago,M1
+12/07/2026,Characidae,Astyanax,Astyanax sp1,1,Lago,M1
+12/07/2026,Cichlidae,Caquetaia,Caquetaia kraussii,2,Lago,M1
+12/07/2026,Characidae,Astyanax,Astyanax magdalenae,1,Lago,M1
+13/07/2026,Loricariidae,Sturisomatichthys,Sturisomatichthys panamensis,1,rio,M2
+13/07/2026,Anostomidae,Leporinus,Leporinus sp,1,rio,M2
+13/07/2026,Characidae,Astyanax,Astyanax sp2,2,rio,M2
+13/07/2026,Cichlidae,Caquetaia,Caquetaia kraussii,5,Lago,M2
+13/07/2026,Heptapteridae,Pimelodella,Pimelodella sp,1,rio,M2
+14/07/2026,Cichlidae,Andinoacara,Andinoacara pulcher,2,Lago,M2
+15/07/2026,Prochilodontidae,Prochilodus,Prochilodus magdalenae,1,Lago,M3
+15/07/2026,Cichlidae,Geophagus,Geophagus steindachneri,5,Lago,M3
+15/07/2026,Cichlidae,Caquetaia,Caquetaia kraussii,6,Lago,M3,,,1
+16/07/2026,Prochilodontidae,Prochilodus,Prochilodus magdalenae,1,rio,M3
+17/07/2026,Prochilodontidae,Prochilodus,Prochilodus magdalenae,2,rio,M3
+17/07/2026,Loricariidae,Sturisomatichthys,Sturisomatichthys panamensis,1,rio,M3
+17/07/2026,Erythrinidae,Hoplias,Hoplias malabaricus,1,Lago,M3
+17/07/2026,Cichlidae,Geophagus,Geophagus steindachneri,2,Lago,M3
+17/07/2026,Cichlidae,Caquetaia,Caquetaia kraussii,4,Lago,M3

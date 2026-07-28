@@ -1,0 +1,54 @@
+---
+title: "Análisis de la comunidad de himenópteros parasitoides"
+author: "Informe técnico"
+format:
+  docx:
+    toc: true
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+# Métodos
+
+Se construyó una matriz de comunidad con las familias de himenópteros parasitoides como filas y los muestreos como columnas, utilizando las abundancias registradas en cada evento de muestreo.
+
+Para evaluar la suficiencia del esfuerzo de muestreo se elaboró una curva de acumulación de familias mediante la función `specaccum()` del paquete **vegan**, empleando el método de aleatorización (*random*) con 1000 permutaciones. La variabilidad del orden de incorporación de los muestreos se representó mediante la desviación estándar obtenida en las permutaciones.
+
+La estructura de la comunidad se exploró mediante un mapa de calor (heatmap) de abundancias relativas. Para ello, la abundancia de cada familia fue estandarizada respecto al total de individuos registrados en cada muestreo, permitiendo comparar la importancia relativa de las familias a lo largo del tiempo.
+
+La diversidad taxonómica fue descrita mediante el perfil de números de Hill (q = 0, q = 1 y q = 2). El orden q = 0 corresponde a la riqueza de familias, q = 1 a la diversidad de Shannon expresada como número efectivo de familias y q = 2 a la diversidad de Simpson expresada igualmente como número efectivo de familias.
+
+# Resultados
+
+## Curva de acumulación de familias
+
+![](figuras/curva_acumulacion.png){fig-align="center" width="90%"}
+
+La riqueza acumulada aumentó progresivamente desde aproximadamente 6.6 familias en el primer muestreo hasta 11 familias al finalizar el estudio. La pendiente de la curva disminuyó conforme aumentó el número de muestreos, indicando que la incorporación de nuevas familias fue cada vez menor.
+
+La banda de desviación estándar fue amplia durante los primeros muestreos y disminuyó progresivamente hasta desaparecer en el último, lo que indica que el efecto del orden de incorporación de los muestreos fue importante al inicio, pero prácticamente inexistente al finalizar el inventario.
+
+En conjunto, la forma de la curva sugiere que el esfuerzo de muestreo fue suficiente para registrar la mayor parte de las familias presentes en el cultivo de maíz, ya que la riqueza observada mostró una clara tendencia hacia la estabilización.
+
+## Abundancia relativa de las familias
+
+![](figuras/heatmap_familias.png){fig-align="center" width="90%"}
+
+El mapa de calor evidenció diferencias temporales en la abundancia relativa de las familias de himenópteros parasitoides. *Signiphoridae* presentó una alta abundancia relativa durante todos los muestreos, constituyéndose como la familia dominante de la comunidad.
+
+*Encyrtidae*, *Eulophidae* y *Pteromalidae* también estuvieron presentes durante la mayor parte del período de estudio, aunque con variaciones en su abundancia relativa entre muestreos. En contraste, familias como *Ceraphronidae*, *Plastygastridae*, *Trichogrammatidae* y *Figitidae* presentaron bajas abundancias y una ocurrencia restringida a uno o pocos eventos de muestreo.
+
+Estos resultados indican que, aunque la composición de la comunidad presentó variaciones temporales, un número reducido de familias concentró la mayor parte de los individuos registrados.
+
+## Perfil de números de Hill
+
+![](figuras/numeros_hill.png){fig-align="center" width="90%"}
+
+El perfil de números de Hill mostró una disminución progresiva de la diversidad efectiva conforme aumentó el orden de diversidad (q). La riqueza observada fue de **11 familias** (q = 0), mientras que la diversidad efectiva disminuyó a aproximadamente **7.74 familias** para q = 1 y a **6.84 familias** para q = 2.
+
+La diferencia entre estos tres órdenes de diversidad indica que la comunidad no presentó una distribución uniforme de abundancias. Aunque se registraron once familias, sólo entre siete y ocho familias contribuyeron de manera importante a la diversidad de Shannon y aproximadamente siete dominaron la comunidad cuando se enfatizaron las familias más abundantes mediante el índice de Simpson.
+
+En conjunto, el perfil de Hill evidencia una comunidad con riqueza relativamente alta, pero con una estructura caracterizada por la dominancia de unas pocas familias y la presencia de varias familias poco abundantes.
