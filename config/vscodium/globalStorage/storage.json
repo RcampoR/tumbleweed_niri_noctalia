@@ -11,7 +11,7 @@
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1785262852056"
+                "backupFolder": "1785341429705"
             }
         ]
     },
@@ -20,10 +20,13 @@
         "workspaces": {
             "file:///home/rcampor/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/Proton-CachyOS%20Latest": "__default__profile__",
             "file:///home/rcampor/Proyectos/proyectos_biologicos/peces/diversidad_peces_guartinajas": "__default__profile__",
-            "file:///home/rcampor/Descargas/julieth": "__default__profile__"
+            "file:///home/rcampor/Descargas/julieth": "__default__profile__",
+            "file:///home/rcampor/.config/niri": "__default__profile__"
         },
         "emptyWindows": {
-            "1785262852056": "__default__profile__"
+            "1785338926448": "__default__profile__",
+            "1785341378408": "__default__profile__",
+            "1785341429705": "__default__profile__"
         }
     },
     "theme": "vs-dark",
@@ -58,7 +61,7 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/rcampor/.config/VSCodium/Backups/1785262852056",
+            "backupPath": "/home/rcampor/.config/VSCodium/Backups/1785341429705",
             "uiState": {
                 "mode": 1,
                 "x": 16,
@@ -71,7 +74,7 @@
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 276,
+            "sideBarWidth": 234,
             "auxiliaryBarWidth": 300,
             "workspaces": {
                 "cb22c2e48c685cfde09e2a9e2d910a02": {
@@ -83,6 +86,10 @@
                     "auxiliaryBarVisible": false
                 },
                 "b5f137f91ef32309693aab179adbe972": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "29eefacdf5e3b4433c3880033f5a6956": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 }

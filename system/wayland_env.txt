@@ -2,4 +2,4 @@ XDG_SESSION_TYPE=wayland
 XDG_CURRENT_DESKTOP=niri
 WAYLAND_DISPLAY=wayland-1
 XDG_SESSION_DESKTOP=niri
-NIRI_SOCKET=/run/user/1000/niri.wayland-1.47269.sock
+NIRI_SOCKET=/run/user/1000/niri.wayland-1.4180.sock

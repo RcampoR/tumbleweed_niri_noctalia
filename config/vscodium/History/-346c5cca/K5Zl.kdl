@@ -60,7 +60,6 @@ input {
         // scroll-button-lock
         // middle-emulation
     }
-    
 
     // Uncomment this to make the mouse warp to the center of newly focused windows.
     // warp-mouse-to-focus
@@ -68,11 +67,6 @@ input {
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     // focus-follows-mouse max-scroll-amount="0%"
-}
-
-cursor {
-    xcursor-theme "Bibata-Modern-Classic"
-    xcursor-size 38
 }
 
 // You can configure outputs by their name, which you can find
@@ -173,7 +167,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#7696B4"
+        active-color "#7fc8ff"
 
         // Color of the ring on inactive monitors.
         //
@@ -221,7 +215,7 @@ layout {
     // You can enable drop shadows for windows.
     shadow {
         // Uncomment the next line to enable shadows.
-         on
+        // on
 
         // By default, the shadow draws only around its window, and not behind it.
         // Uncomment this setting to make the shadow draw behind its window.
@@ -243,16 +237,16 @@ layout {
         // pixels and match the CSS box-shadow properties.
 
         // Softness controls the shadow blur radius.
-        softness 48
+        softness 30
 
         // Spread expands the shadow.
-        spread -2
+        spread 5
 
         // Offset moves the shadow relative to the window.
-        offset x=0 y=8
+        offset x=0 y=5
 
         // You can also change the shadow color and opacity.
-        color "#00000022"
+        color "#0007"
     }
 
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
@@ -288,7 +282,7 @@ hotkey-overlay {
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
 // This option will also fix border/focus ring drawing behind some semitransparent windows.
 // After enabling or disabling this, you need to restart the apps for this to take effect.
- prefer-no-csd
+// prefer-no-csd
 
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
@@ -303,60 +297,42 @@ screenshot-path "~/Imágenes/Capturas/Screenshot %Y-%m-%d %H-%M-%S.png"
 
 animations {
 
-    // Cambio de workspace: un asentamiento suave, con un rebote casi
-    // imperceptible al llegar — se nota fluido sin distraer.
     workspace-switch {
-        spring damping-ratio=0.90 stiffness=850 epsilon=0.0003
+        spring damping-ratio=0.96 stiffness=820 epsilon=0.0001
     }
 
-    // Apertura de ventana: aquí es donde vive el "rebote gratificante".
-    // Cambio de easing a spring: la ventana entra y se asienta con una
-    // ligerísima inercia, como si "cayera" en su lugar.
     window-open {
-        spring damping-ratio=0.78 stiffness=780 epsilon=0.0006
+        duration-ms 170
+        curve "ease-out-expo"
     }
 
-    // Cierre: mantenlo como easing. Un rebote al CERRAR se siente raro
-    // (la ventana ya no está, no hay "contacto" que celebrar).
-    // Solo lo hice un poco más rápido y decidido.
     window-close {
-        duration-ms 140
+        duration-ms 165
         curve "ease-out-quad"
     }
 
-    // Movimiento de cámara (scroll horizontal entre columnas):
-    // fluido pero sobrio — el rebote aquí puede marear si es visible.
     horizontal-view-movement {
-        spring damping-ratio=0.92 stiffness=700 epsilon=0.0003
+        spring damping-ratio=0.98 stiffness=650 epsilon=0.0001
     }
 
-    // Movimiento de ventanas dentro del workspace: este es el otro
-    // punto clave para "inercia al contacto" — cuando una ventana se
-    // mueve o es empujada por otra, aquí se siente el golpecito suave.
     window-movement {
-        spring damping-ratio=0.80 stiffness=780 epsilon=0.0005
+        spring damping-ratio=0.98 stiffness=650 epsilon=0.0001
     }
 
-    // Resize: mantenlo cerca del crítico. Un resize que rebota se
-    // percibe como un bug visual más que como pulido (la doc lo advierte
-    // explícitamente con overdamped, y underdamped fuerte se ve peor aún
-    // en bordes de ventana).
     window-resize {
-        spring damping-ratio=0.95 stiffness=820 epsilon=0.0003
+        spring damping-ratio=0.98 stiffness=700 epsilon=0.0001
     }
 
     overview-open-close {
-        spring damping-ratio=0.90 stiffness=750 epsilon=0.0003
+        spring damping-ratio=1.0 stiffness=700 epsilon=0.0001
     }
 
     screenshot-ui-open {
-        duration-ms 160
+        duration-ms 170
         curve "ease-out-quad"
     }
 
 }
-
-
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Window-Rules
@@ -775,12 +751,10 @@ window-rule {
 }
 
 blur {
-    passes 3
-    offset 2.5
-
-    noise 0.015
-
-    saturation 0.92
+    passes 2
+    offset 3.0
+    noise 0.03
+    saturation 1.0
 }
 
 include "noctalia.kdl"

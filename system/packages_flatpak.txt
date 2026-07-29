@@ -1,7 +1,6 @@
 app.zen_browser.zen	1.21.9b	stable
 com.github.tchx84.Flatseal	2.4.1	stable
 com.heroicgameslauncher.hgl	v2.22.0	stable
-com.nuclearplayer.Nuclear	1.40.2	stable
 com.stremio.Stremio	1.1.4	stable
 com.valvesoftware.Steam	1.0.0.85	stable
 com.vysp3r.ProtonPlus	0.5.22	stable

@@ -60,7 +60,11 @@ input {
         // scroll-button-lock
         // middle-emulation
     }
-    
+
+    cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 24
+}
 
     // Uncomment this to make the mouse warp to the center of newly focused windows.
     // warp-mouse-to-focus
@@ -68,11 +72,6 @@ input {
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     // focus-follows-mouse max-scroll-amount="0%"
-}
-
-cursor {
-    xcursor-theme "Bibata-Modern-Classic"
-    xcursor-size 38
 }
 
 // You can configure outputs by their name, which you can find
@@ -173,7 +172,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#7696B4"
+        active-color "#7fc8ff"
 
         // Color of the ring on inactive monitors.
         //
@@ -221,7 +220,7 @@ layout {
     // You can enable drop shadows for windows.
     shadow {
         // Uncomment the next line to enable shadows.
-         on
+        // on
 
         // By default, the shadow draws only around its window, and not behind it.
         // Uncomment this setting to make the shadow draw behind its window.
@@ -243,16 +242,16 @@ layout {
         // pixels and match the CSS box-shadow properties.
 
         // Softness controls the shadow blur radius.
-        softness 48
+        softness 30
 
         // Spread expands the shadow.
-        spread -2
+        spread 5
 
         // Offset moves the shadow relative to the window.
-        offset x=0 y=8
+        offset x=0 y=5
 
         // You can also change the shadow color and opacity.
-        color "#00000022"
+        color "#0007"
     }
 
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
@@ -288,7 +287,7 @@ hotkey-overlay {
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
 // This option will also fix border/focus ring drawing behind some semitransparent windows.
 // After enabling or disabling this, you need to restart the apps for this to take effect.
- prefer-no-csd
+// prefer-no-csd
 
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
@@ -775,12 +774,10 @@ window-rule {
 }
 
 blur {
-    passes 3
-    offset 2.5
-
-    noise 0.015
-
-    saturation 0.92
+    passes 2
+    offset 3.0
+    noise 0.03
+    saturation 1.0
 }
 
 include "noctalia.kdl"
