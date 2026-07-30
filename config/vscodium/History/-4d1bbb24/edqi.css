@@ -1,0 +1,9 @@
+@import url("noctalia.css");
+
+/* Transparencia estilo Kitty (0.88) para que el blur global de Niri se vea */
+@define-color window_bg_color rgba(36, 42, 48, 0.88);
+@define-color view_bg_color rgba(36, 42, 48, 0.88);
+
+.background {
+    background-color: @window_bg_color;
+}

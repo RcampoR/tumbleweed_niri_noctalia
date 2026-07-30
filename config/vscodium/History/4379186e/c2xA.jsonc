@@ -1,0 +1,55 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "kitty",
+    "source": "/home/rcampor/Imágenes/fondos/guardar_fondos/scientist_pc.png",
+    "width": 35,
+    "height": 10,
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+
+  "display": {
+    "separator": " ",
+    "color": {
+      "keys": "38;2;125;138;150",
+      "output": "38;2;214;210;200"
+    }
+  },
+
+  "modules": [
+  "break",
+  {
+    "type": "custom",
+    "format": "\u001b[38;2;107;143;71m#═══════════ openSUSE Tumbleweed · Slate Lab ═══════════#\u001b[0m"
+  },
+  "break",
+  {
+    "type": "os",
+    "key": " OS",
+    "keyColor": "38;2;107;143;71"
+  },
+  { "type": "host",     "key": " Host" },
+  { "type": "kernel",   "key": " Kernel" },
+  { "type": "uptime",   "key": " Uptime" },
+  { "type": "packages", "key": " Paquetes" },
+  { "type": "shell",    "key": " Shell" },
+  { "type": "wm",       "key": " WM" },
+  { "type": "de",       "key": " Shell gráfico" },
+  { "type": "terminal", "key": " Terminal" },
+  { "type": "cpu",      "key": " CPU" },
+  { "type": "gpu",      "key": " GPU" },
+  { "type": "memory",   "key": " RAM" },
+  { "type": "disk",     "key": " Disco" },
+  "break",
+  {
+    "type": "custom",
+    "format": "\u001b[38;2;107;143;71m#═══════════════════════════════════════#\u001b[0m"
+  },
+  "colors"
+]
+}

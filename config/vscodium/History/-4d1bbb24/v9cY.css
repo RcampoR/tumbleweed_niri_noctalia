@@ -1,0 +1,17 @@
+@import url("noctalia.css");
+
+window.thunar scrolledwindow.standard-view {
+    background-color: rgba(36,42,48,0.20);
+}
+
+window.thunar scrolledwindow.standard-view widget.view {
+    background: transparent;
+}
+
+window.thunar scrolledwindow.sidebar {
+    background-color: rgba(36,42,48,0.20);
+}
+
+window.thunar scrolledwindow.sidebar treeview.view {
+    background: transparent;
+}

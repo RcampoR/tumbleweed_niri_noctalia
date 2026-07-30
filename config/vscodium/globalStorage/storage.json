@@ -11,7 +11,7 @@
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1785341429705"
+                "backupFolder": "1785437745344"
             }
         ]
     },
@@ -24,27 +24,25 @@
             "file:///home/rcampor/.config/niri": "__default__profile__"
         },
         "emptyWindows": {
-            "1785338926448": "__default__profile__",
-            "1785341378408": "__default__profile__",
-            "1785341429705": "__default__profile__"
+            "1785437745344": "__default__profile__"
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#121314",
+    "themeBackground": "#242a30",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#bfbfbf",
-            "background": "#121314",
-            "editorBackground": "#121314",
-            "titleBarBackground": "#191a1b",
+            "foreground": "#d8dee6",
+            "background": "#242a30",
+            "editorBackground": "#242a30",
+            "titleBarBackground": "#242a30",
             "titleBarBorder": "#2a2b2c",
-            "activityBarBackground": "#191a1b",
+            "activityBarBackground": "#242a30",
             "activityBarBorder": "#2a2b2c",
-            "sideBarBackground": "#191a1b",
-            "sideBarBorder": "#2a2b2c",
-            "statusBarBackground": "#191a1b",
+            "sideBarBackground": "#242a30",
+            "sideBarBorder": "#56616d",
+            "statusBarBackground": "#242a30",
             "statusBarBorder": "#2a2b2c",
             "statusBarNoFolderBackground": "#191a1b"
         },
@@ -61,7 +59,7 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/rcampor/.config/VSCodium/Backups/1785341429705",
+            "backupPath": "/home/rcampor/.config/VSCodium/Backups/1785437745344",
             "uiState": {
                 "mode": 1,
                 "x": 16,

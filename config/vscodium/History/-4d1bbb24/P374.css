@@ -1,0 +1,13 @@
+@import url("noctalia.css");
+
+.thunar {
+    opacity: 0.90;
+}
+
+treeview,
+treeview.view,
+.view,
+.standard-view {
+    background-color: transparent;
+    background-image: none;
+}

@@ -1,0 +1,81 @@
+// ==========================================
+// REGLAS DE VENTANAS Y CAPAS
+// ==========================================
+
+// Work around WezTerm's initial configure bug
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+// Open the Firefox picture-in-picture player as floating by default
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+// Example: block out two password managers from screen capture
+/-window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    block-out-from "screen-capture"
+}
+
+// Bordes redondeados globales
+window-rule {
+    geometry-corner-radius 20
+    clip-to-geometry true
+}
+
+// Reglas específicas por aplicación
+window-rule {
+    match app-id="dev.noctalia.Noctalia"
+    open-floating true
+    default-column-width {
+        fixed 1080
+    }
+    default-window-height {
+        fixed 920
+    }
+}
+
+window-rule {
+    match app-id="[Tt]hunar"
+    opacity 0.88
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
+    match app-id="app.zen_browser.zen"
+    opacity 0.88
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
+    match app-id="codium"
+    // Opacidad global para que Niri traspase el lienzo opaco de Electron
+    opacity 0.88
+    background-effect {
+        blur true
+    }
+}
+
+// BLUR GLOBAL - Efecto xray global para ventanas
+window-rule {
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
+// Regla de capas para componentes de Noctalia
+layer-rule {
+    match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+    background-effect {
+        xray false
+    }
+}

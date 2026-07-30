@@ -21,13 +21,12 @@ bat-limit() { echo "$1" | tee /sys/class/power_supply/BAT0/charge_control_end_th
 # TERMINAL
 export TERMINAL=kitty
 
-# CORRER FLATSEAL
-alias flatseal='flatpak run com.github.tchx84.Flatseal'
+# Fastfetch solo al abrir una terminal interactiva de Kitty
+if [[ $- == *i* ]] && [[ -n "$KITTY_WINDOW_ID" ]]; then
+    fastfetch
+fi
 
 # Alias para modelos de Ollama
 alias IA7='ollama run qwen2.5-coder:7b'
 alias IA1='ollama run qwen2.5-coder:1.5b'
 
-export PATH=$PATH:/home/rcampor/.spicetify
-export PATH=$PATH:~/.spicetify
-export PATH=$PATH:~/.spicetify
