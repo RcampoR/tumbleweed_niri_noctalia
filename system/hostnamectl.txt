@@ -4,9 +4,9 @@ Transient hostname: localhost
            Chassis: laptop 💻
  Chassis Asset Tag: No Asset Tag
         Machine ID: 82db666de7414e9882489017180fff35
-           Boot ID: 70db72f7e35747a1a133e3131f44e9bf
+           Boot ID: c403098e327848df9c29eb541e00025c
   Operating System: openSUSE Tumbleweed
-       CPE OS Name: cpe:2.3:o:opensuse:tumbleweed:20260726:*:*:*:*:*:*:*
+       CPE OS Name: cpe:2.3:o:opensuse:tumbleweed:20260729:*:*:*:*:*:*:*
             Kernel: Linux 7.1.4-1-default
       Architecture: x86-64
    Hardware Vendor: ASUSTeK COMPUTER INC.
@@ -14,4 +14,4 @@ Transient hostname: localhost
   Hardware Version: 1.0
   Firmware Version: M1603QA.308
      Firmware Date: Mon 2023-05-22
-      Firmware Age: 3y 2month 1w 2d
+      Firmware Age: 3y 2month 1w 4d

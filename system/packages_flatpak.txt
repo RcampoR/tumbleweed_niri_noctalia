@@ -1,4 +1,4 @@
-app.zen_browser.zen	1.21.9b	stable
+app.zen_browser.zen	1.21.10b	stable
 com.github.tchx84.Flatseal	2.4.1	stable
 com.heroicgameslauncher.hgl	v2.22.0	stable
 com.stremio.Stremio	1.1.4	stable
