@@ -1,17 +1,16 @@
-Transient hostname: localhost
-   Static hostname: (unset)
-         Icon name: computer-laptop
-           Chassis: laptop 💻
- Chassis Asset Tag: No Asset Tag
-        Machine ID: 82db666de7414e9882489017180fff35
-           Boot ID: c403098e327848df9c29eb541e00025c
-  Operating System: openSUSE Tumbleweed
-       CPE OS Name: cpe:2.3:o:opensuse:tumbleweed:20260729:*:*:*:*:*:*:*
-            Kernel: Linux 7.1.4-1-default
-      Architecture: x86-64
-   Hardware Vendor: ASUSTeK COMPUTER INC.
-    Hardware Model: VivoBook_ASUSLaptop M1603QA_M1603QA
-  Hardware Version: 1.0
-  Firmware Version: M1603QA.308
-     Firmware Date: Mon 2023-05-22
-      Firmware Age: 3y 2month 1w 4d
+  Static hostname: xuanyuanming
+        Icon name: computer-laptop
+          Chassis: laptop 💻
+Chassis Asset Tag: No Asset Tag
+       Machine ID: 82db666de7414e9882489017180fff35
+          Boot ID: 593ab4ae04054b4986ad6cf8acefd6cb
+ Operating System: openSUSE Tumbleweed
+      CPE OS Name: cpe:2.3:o:opensuse:tumbleweed:20260731:*:*:*:*:*:*:*
+           Kernel: Linux 7.1.5-1-default
+     Architecture: x86-64
+  Hardware Vendor: ASUSTeK COMPUTER INC.
+   Hardware Model: VivoBook_ASUSLaptop M1603QA_M1603QA
+ Hardware Version: 1.0
+ Firmware Version: M1603QA.308
+    Firmware Date: Mon 2023-05-22
+     Firmware Age: 3y 2month 1w 5d

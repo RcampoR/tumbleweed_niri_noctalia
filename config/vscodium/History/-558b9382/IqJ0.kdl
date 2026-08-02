@@ -45,7 +45,7 @@ window-rule {
 window-rule {
     match app-id="app.zen_browser.zen"
 
-    open-on-workspace "1"
+    open-on-workspace 1
     open-maximized true
 
     opacity 0.88

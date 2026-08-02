@@ -11,7 +11,7 @@
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1785552184365"
+                "backupFolder": "1785685750665"
             }
         ]
     },
@@ -24,7 +24,7 @@
             "file:///home/rcampor/.config/niri": "__default__profile__"
         },
         "emptyWindows": {
-            "1785552184365": "__default__profile__"
+            "1785685750665": "__default__profile__"
         }
     },
     "theme": "vs-dark",
@@ -59,7 +59,7 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/rcampor/.config/VSCodium/Backups/1785552184365",
+            "backupPath": "/home/rcampor/.config/VSCodium/Backups/1785685750665",
             "uiState": {
                 "mode": 1,
                 "x": 16,

@@ -302,7 +302,6 @@ Incluye:
 
 ## Problemas conocidos
 
-
 ### GTK4
 
 No permitir que `nwg-look` exporte la configuración GTK4. **Noctalia debe mantener el control.**

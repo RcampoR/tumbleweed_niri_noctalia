@@ -1,0 +1,100 @@
+// ==========================================
+// REGLAS DE VENTANAS
+// ==========================================
+
+// ── Globales ──
+window-rule {
+    geometry-corner-radius 20
+    clip-to-geometry true
+}
+
+window-rule {
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
+// ── Noctalia (infraestructura, siempre flotante) ──
+window-rule {
+    match app-id="dev.noctalia.Noctalia"
+    open-floating true
+    default-column-width { fixed 1080; }
+    default-window-height { fixed 920; }
+}
+
+// ── WS1: Navegador (herramienta principal) ──
+window-rule {
+    match app-id="app.zen_browser.zen"
+    open-on-workspace 1
+    open-maximized true
+    default-column-width { proportion 0.80; }
+    opacity 0.88
+    background-effect { blur true; }
+}
+
+// ── WS2: Código + Escritura + Referencias ──
+window-rule {
+    match app-id="codium"
+    open-on-workspace 2
+    default-column-width { proportion 0.60; }
+    opacity 0.88
+    background-effect { blur true; }
+}
+
+window-rule {
+    match app-id="org.zotero.Zotero"
+    open-on-workspace 2
+    default-column-width { proportion 0.40; }
+}
+
+window-rule {
+    match app-id="org.onlyoffice.desktopeditors"
+    open-on-workspace 2
+}
+
+// ── WS3: GIS / Imagen / Video ──
+window-rule {
+    match app-id="org.qgis.qgis"
+    open-on-workspace 3
+}
+
+window-rule {
+    match app-id="org.gimp.GIMP"
+    open-on-workspace 3
+}
+
+window-rule {
+    match app-id="org.kde.kdenlive"
+    open-on-workspace 3
+}
+
+// ── Ubicuas (sin workspace fijo, nacen donde esté el foco) ──
+window-rule {
+    match app-id="kitty"
+    default-column-width { proportion 0.50; }
+}
+
+window-rule {
+    match app-id="thunar"
+    default-column-width { proportion 0.40; }
+    opacity 0.88
+    background-effect { blur true; }
+}
+
+// ── Flotantes por naturaleza ──
+window-rule {
+    match app-id="pavucontrol"
+    open-floating true
+}
+
+window-rule {
+    match app-id="com.github.tchx84.Flatseal"
+    open-floating true
+}
+
+// ── Capas de Noctalia ──
+layer-rule {
+    match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+    background-effect { xray false; }
+}

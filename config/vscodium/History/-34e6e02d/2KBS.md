@@ -1,3 +1,4 @@
+Aquí tienes la **ficha técnica actualizada**, integrando la declaración formal de los *workspaces* nombrados, la lógica del enrutamiento de ventanas por entorno y el comportamiento de los atajos de teclado.
 
 ---
 
@@ -302,6 +303,9 @@ Incluye:
 
 ## Problemas conocidos
 
+### Keyring
+
+VSCodium solicita crear un nuevo keyring. Pendiente revisar. No afecta el funcionamiento.
 
 ### GTK4
 

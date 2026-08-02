@@ -1,6 +1,7 @@
 app.zen_browser.zen	1.21.10b	stable
 com.github.tchx84.Flatseal	2.4.1	stable
 com.heroicgameslauncher.hgl	v2.22.0	stable
+com.spotify.Client	1.2.92.147.g5b8f9367	stable
 com.stremio.Stremio	1.1.4	stable
 com.valvesoftware.Steam	1.0.0.85	stable
 com.vysp3r.ProtonPlus	0.5.22	stable

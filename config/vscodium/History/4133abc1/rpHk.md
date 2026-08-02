@@ -1,3 +1,4 @@
+Aquí tienes la **ficha técnica actualizada**, integrando la declaración formal de los *workspaces* nombrados, la lógica del enrutamiento de ventanas por entorno y el comportamiento de los atajos de teclado.
 
 ---
 

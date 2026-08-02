@@ -107,7 +107,7 @@ window-rule {
 // ESPACIO #4 //
 
 window-rule {
-    match app-id="spotify"
+    match app-id="com.spotify.Client"
     open-on-workspace "4"
 
     opacity 0.88

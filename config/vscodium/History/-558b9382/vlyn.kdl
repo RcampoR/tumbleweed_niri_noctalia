@@ -45,7 +45,7 @@ window-rule {
 window-rule {
     match app-id="app.zen_browser.zen"
 
-    open-on-workspace "1"
+    open-on-workspace "Web"
     open-maximized true
 
     opacity 0.88
@@ -57,7 +57,7 @@ window-rule {
 
 window-rule {
     match app-id="org.zotero.Zotero"
-   open-on-workspace "1" 
+   open-on-workspace "Web" 
    
    opacity 0.88
 
@@ -71,7 +71,7 @@ window-rule {
 window-rule {
     match app-id="codium"
 
-    open-on-workspace "2"
+    open-on-workspace "Trabajo"
 
     opacity 0.88
 
@@ -83,7 +83,7 @@ window-rule {
 window-rule {
     match app-id="org.onlyoffice.desktopeditors"
 
-    open-on-workspace "2"
+    open-on-workspace "Trabajo"
 }
 
 
@@ -91,24 +91,24 @@ window-rule {
 
 window-rule {
     match app-id="org.qgis.qgis"
-    open-on-workspace "3"
+    open-on-workspace "Edición"
 }
 
 window-rule {
     match app-id="org.kde.kdenlive"
-    open-on-workspace "3"
+    open-on-workspace "Edición"
 }
 
 window-rule {
     match app-id="gimp"
-    open-on-workspace "3"
+    open-on-workspace "Edición"
 }
 
 // ESPACIO #4 //
 
 window-rule {
-    match app-id="spotify"
-    open-on-workspace "4"
+    match app-id="com.spotify.Client"
+    open-on-workspace "Vagancia"
 
     opacity 0.88
 
@@ -119,17 +119,17 @@ window-rule {
 
 window-rule {
     match app-id="com.valvesoftware.Steam"
-    open-on-workspace "4"
+    open-on-workspace "Vagancia"
 }
 
 window-rule {
     match app-id="com.heroicgameslauncher.hgl"
-    open-on-workspace "4"
+    open-on-workspace "Vagancia"
 }
 
 window-rule {
     match app-id="com.vysp3r.ProtonPlus"
-    open-on-workspace "4"
+    open-on-workspace "Vagancia"
 }
 
 

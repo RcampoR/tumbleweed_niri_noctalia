@@ -2,17 +2,10 @@
 // CONFIGURACIÓN BASE DE NIRI
 // ==========================================
 
-// Declarar escritorios nombrados para que funcionen las reglas de ventana
-workspace "1"
-workspace "2"
-workspace "3"
-workspace "4"
-
 // --- INCLUSIÓN DE ARCHIVOS EXTERNOS ---
 include "reglas.kdl"
 include "atajos.kdl"
 include "noctalia.kdl"
-
 
 // Input device configuration.
 input {
@@ -88,7 +81,6 @@ layout {
     struts {
     }
 }
-
 
 // Autostart
 spawn-at-startup "noctalia" 

@@ -69,7 +69,7 @@ cnf-0.9.0~0-1.5.x86_64
 cnf-bash-0.9.0~0-1.5.noarch
 cnf-locale-0.9.0~0-1.5.noarch
 codium-1.126.04524-el8.x86_64
-compatlibopenblas_openmp0-0.3.33-2.2.x86_64
+compatlibopenblas_openmp0-0.3.33-3.1.x86_64
 compat-usrmerge-tools-84.87-5.26.x86_64
 coreutils-9.11-4.3.x86_64
 coreutils-doc-9.11-4.3.noarch
@@ -81,9 +81,9 @@ cpio-lang-2.15-7.4.noarch
 cpio-mt-2.15-7.4.x86_64
 cpp15-15.3.0+git11272-1.3.x86_64
 cpp-16-1.1.x86_64
-cpp16-16.1.1+git8886-1.3.x86_64
-cpupower-7.1.4-14.5.x86_64
-cpupower-bash-completion-7.1.4-14.5.noarch
+cpp16-16.1.1+git9423-1.1.x86_64
+cpupower-7.1.5-14.6.x86_64
+cpupower-bash-completion-7.1.5-14.6.noarch
 cracklib-2.9.11-1.10.x86_64
 cracklib-dict-full-2.8.12-66.20.x86_64
 crypto-policies-20250714.cd6043a-4.2.noarch
@@ -174,11 +174,11 @@ gcc15-fortran-15.3.0+git11272-1.3.x86_64
 gcc15-info-15.3.0+git11272-1.3.noarch
 gcc15-locale-15.3.0+git11272-1.3.x86_64
 gcc-16-1.1.x86_64
-gcc16-16.1.1+git8886-1.3.x86_64
-gcc16-c++-16.1.1+git8886-1.3.x86_64
-gcc16-fortran-16.1.1+git8886-1.3.x86_64
-gcc16-info-16.1.1+git8886-1.3.noarch
-gcc16-locale-16.1.1+git8886-1.3.x86_64
+gcc16-16.1.1+git9423-1.1.x86_64
+gcc16-c++-16.1.1+git9423-1.1.x86_64
+gcc16-fortran-16.1.1+git9423-1.1.x86_64
+gcc16-info-16.1.1+git9423-1.1.noarch
+gcc16-locale-16.1.1+git9423-1.1.x86_64
 gcc-c++-16-1.1.x86_64
 gcc-fortran-16-1.1.x86_64
 gcc-info-16-1.1.x86_64
@@ -527,7 +527,7 @@ jq-1.8.2-1.3.x86_64
 json-glib-lang-1.10.8-1.6.noarch
 kanshi-1.7.0-1.8.x86_64
 kbd-2.9.0-2.4.x86_64
-kernel-default-7.1.4-1.2.x86_64
+kernel-default-7.1.5-1.1.x86_64
 kernel-firmware-all-20250206-1.3.noarch
 kernel-firmware-amdgpu-20260717-1.1.noarch
 kernel-firmware-ath10k-20260610-1.2.noarch
@@ -643,7 +643,7 @@ libapr-util1-0-1.6.3-3.3.x86_64
 libarchive13-3.8.7-1.4.x86_64
 libarmadillo15-15.2.4-1.3.x86_64
 libarpack2-3.9.1-4.7.x86_64
-libasan8-16.1.1+git8886-1.3.x86_64
+libasan8-16.1.1+git9423-1.1.x86_64
 libasm1-0.194-1.4.x86_64
 libasound2-1.2.16.1-1.3.x86_64
 libass9-0.17.5-1.3.x86_64
@@ -653,7 +653,7 @@ libatasmart-utils-0.19-11.8.x86_64
 libatk-1_0-0-2.60.5-1.2.x86_64
 libatk-bridge-2_0-0-2.60.5-1.2.x86_64
 libatkmm-1_6-1-2.28.5-1.3.x86_64
-libatomic1-16.1.1+git8886-1.3.x86_64
+libatomic1-16.1.1+git9423-1.1.x86_64
 libatspi0-2.60.5-1.2.x86_64
 libattr1-2.6.0-1.2.x86_64
 libaudit1-4.0.2-3.5.x86_64
@@ -752,7 +752,7 @@ libcom_err-devel-1.47.3-2.2.x86_64
 libcomposefs1-1.0.8-3.9.x86_64
 libconfig++15-1.8.1-1.6.x86_64
 libcpuinfo-suse0-0~git1739936485.b73ae6c-2.5.x86_64
-libcpupower1-7.1.4-14.5.x86_64
+libcpupower1-7.1.5-14.6.x86_64
 libcrack2-2.9.11-1.10.x86_64
 libcrypt1-4.5.2-2.4.x86_64
 libcryptopp8_9_0-8.9.0-6.5.x86_64
@@ -850,7 +850,7 @@ libfuse3-4-3.18.2-1.5.x86_64
 libfwupd3-2.1.7-1.1.x86_64
 libfyaml0-0.9.5-1.4.x86_64
 libgbm1-26.1.5-1.2.x86_64
-libgcc_s1-16.1.1+git8886-1.3.x86_64
+libgcc_s1-16.1.1+git9423-1.1.x86_64
 libgck-1-0-3.41.2-5.4.x86_64
 libgck-2-2-4.4.0.1-3.4.x86_64
 libgck-modules-gnome-keyring-50.0-3.2.x86_64
@@ -872,7 +872,7 @@ libgeos_c1-3.14.1-2.3.x86_64
 libgeotiff5-1.7.4-1.6.x86_64
 libgepub-0_7-0-0.7.3-1.6.x86_64
 libgexiv2-2-0.14.6-2.4.x86_64
-libgfortran5-16.1.1+git8886-1.3.x86_64
+libgfortran5-16.1.1+git9423-1.1.x86_64
 libgif7-5.2.2-4.3.x86_64
 libgimp-3_0-0-3.2.4-2.2.x86_64
 libgimpui-3_0-0-3.2.4-2.2.x86_64
@@ -898,7 +898,7 @@ libgnome-desktop-3-20-44.5-1.6.x86_64
 libgnome-desktop-4-2-44.5-1.6.x86_64
 libgnutls30-3.8.13-2.2.x86_64
 libgobject-2_0-0-2.88.2-1.3.x86_64
-libgomp1-16.1.1+git8886-1.3.x86_64
+libgomp1-16.1.1+git9423-1.1.x86_64
 libgpaste2-0-45.4-1.4.x86_64
 libgpaste-gtk-3-0-45.4-1.4.x86_64
 libgpaste-gtk4-0-45.4-1.4.x86_64
@@ -988,7 +988,7 @@ libhidapi-hidraw0-0.14.0-1.9.x86_64
 libhogweed6-3.10.2-1.5.x86_64
 libhogweed6-x86-64-v3-3.10.2-1.5.x86_64
 libhunspell-1_7-0-1.7.2-1.13.x86_64
-libhwasan0-16.1.1+git8886-1.3.x86_64
+libhwasan0-16.1.1+git9423-1.1.x86_64
 libhwy1-1.4.0-2.1.x86_64
 libhyphen0-2.8.9-1.3.x86_64
 libical3-3.0.20-1.6.x86_64
@@ -1011,7 +1011,7 @@ libinotifytools0-4.25.9.0-1.5.x86_64
 libinput10-1.31.3-1.3.x86_64
 libinput-udev-1.31.3-1.3.x86_64
 libisl23-0.27-1.6.x86_64
-libitm1-16.1.1+git8886-1.3.x86_64
+libitm1-16.1.1+git9423-1.1.x86_64
 libiw30-30.pre9-41.7.x86_64
 libixml22-22.0.4-1.2.x86_64
 libjack0-1.9.22-5.5.x86_64
@@ -1058,7 +1058,7 @@ libliveMedia119-2026.06.01-1.3.x86_64
 libLLVM22-22.1.8-1.2.x86_64
 liblmdb-0_9_35-0.9.35-1.4.x86_64
 liblqr-1-0-0.4.2-8.6.x86_64
-liblsan0-16.1.1+git8886-1.3.x86_64
+liblsan0-16.1.1+git9423-1.1.x86_64
 libltdl7-2.6.2-1.2.x86_64
 liblua5_3-5-5.3.6-4.6.x86_64
 liblua5_4-5-5.4.8-4.6.x86_64
@@ -1154,7 +1154,7 @@ libodbc2-2.3.14-1.6.x86_64
 libogg0-1.3.6-1.5.x86_64
 libonig5-6.9.10-2.5.x86_64
 libopenal1-1.24.3~179-1.6.x86_64
-libopenblas_openmp0-0.3.33-2.2.x86_64
+libopenblas_openmp0-0.3.33-3.1.x86_64
 libopencore-amrnb0-0.1.6-1.11.x86_64
 libopencore-amrwb0-0.1.6-1.11.x86_64
 libOpenEXR-3_4-33-3.4.13-1.3.x86_64
@@ -1278,9 +1278,9 @@ libQt6WaylandClient6-6.11.1-1.3.x86_64
 libQt6Widgets6-6.11.1-1.3.x86_64
 libQt6WlShellIntegration6-6.11.1-1.3.x86_64
 libQtQuick5-5.15.19+kde23-1.3.x86_64
-libquadmath0-16.1.1+git8886-1.3.x86_64
+libquadmath0-16.1.1+git9423-1.1.x86_64
 libquadmath0-devel-gcc15-15.3.0+git11272-1.3.x86_64
-libquadmath0-devel-gcc16-16.1.1+git8886-1.3.x86_64
+libquadmath0-devel-gcc16-16.1.1+git9423-1.1.x86_64
 librav1e0_8-0.8.1-2.3.x86_64
 libraw1394-11-2.1.2-2.8.x86_64
 libraw25-0.22.1-1.4.x86_64
@@ -1367,9 +1367,9 @@ libssh4-0.11.5-1.2.x86_64
 libssh-config-0.11.5-1.2.noarch
 libssh-devel-0.11.5-1.2.x86_64
 libstartup-notification-1-0-0.12-17.8.x86_64
-libstdc++6-16.1.1+git8886-1.3.x86_64
+libstdc++6-16.1.1+git9423-1.1.x86_64
 libstdc++6-devel-gcc15-15.3.0+git11272-1.3.x86_64
-libstdc++6-devel-gcc16-16.1.1+git8886-1.3.x86_64
+libstdc++6-devel-gcc16-16.1.1+git9423-1.1.x86_64
 libstdc++-devel-16-1.1.x86_64
 libstemmer1d-3.0.1-1.5.x86_64
 libstorage-ng1-4.5.341-1.2.x86_64
@@ -1408,7 +1408,7 @@ libtomlplusplus3-3.4.0-1.9.x86_64
 libtool-2.6.2-1.2.x86_64
 libtracker-sparql-3_0-0-3.11.1-1.4.x86_64
 libts0-1.24-1.5.x86_64
-libtsan2-16.1.1+git8886-1.3.x86_64
+libtsan2-16.1.1+git9423-1.1.x86_64
 libtss2-esys0-4.1.3-1.5.x86_64
 libtss2-fapi1-4.1.3-1.5.x86_64
 libtss2-fapi-common-4.1.3-1.5.x86_64
@@ -1421,7 +1421,7 @@ libtumbler-1-0-4.20.1-1.6.x86_64
 libturbojpeg0-8.3.2-83.4.x86_64
 libturbojpeg0-x86-64-v3-8.3.2-83.4.x86_64
 libtwolame0-0.4.0-1.25.x86_64
-libubsan1-16.1.1+git8886-1.3.x86_64
+libubsan1-16.1.1+git9423-1.1.x86_64
 libudev1-261.2-1.1.x86_64
 libudfread3-1.2.0-1.5.x86_64
 libudisks2-0-2.11.1-1.3.x86_64
@@ -1682,7 +1682,7 @@ nftables-1.1.6-2.3.x86_64
 nghttp3-devel-1.15.0-1.4.x86_64
 ngtcp2-devel-1.24.0-1.2.x86_64
 niri-26.04-1.4.x86_64
-noctalia-5.0.0~beta7-2.1.x86_64
+noctalia-5.0.0~beta7-2.2.x86_64
 notification-daemon-3.20.0-8.6.x86_64
 notification-daemon-lang-3.20.0-8.6.noarch
 ntfs-3g-2026.7.7-1.1.x86_64
@@ -1706,8 +1706,8 @@ openssh-server-10.4p1-1.2.x86_64
 openssl-3-3.5.3-7.2.x86_64
 openssl-3.5.3-1.3.noarch
 openSUSE-build-key-1.0-69.1.x86_64
-openSUSE-release-20260729-4228.1.x86_64
-openSUSE-release-appliance-custom-20260729-4228.1.x86_64
+openSUSE-release-20260731-4230.1.x86_64
+openSUSE-release-appliance-custom-20260731-4230.1.x86_64
 p11-kit-0.26.2-1.6.x86_64
 p11-kit-server-0.26.2-1.6.x86_64
 p11-kit-tools-0.26.2-1.6.x86_64
