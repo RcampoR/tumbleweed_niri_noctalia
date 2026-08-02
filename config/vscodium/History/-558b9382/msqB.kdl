@@ -132,18 +132,6 @@ window-rule {
     open-on-workspace "4"
 }
 
-window-rule {
-    match app-id="com.dec05eba.gpu_screen_recorder"
-    open-on-workspace "4"
-
-    opacity 0.88
-
-    background-effect {
-        blur true
-    }
-}
-
-
 
 // REGLAS ESPECIALES //
 
@@ -164,7 +152,6 @@ window-rule {
         xray true
     }
 }
-
 
 // Regla de capas para componentes de Noctalia
 layer-rule {

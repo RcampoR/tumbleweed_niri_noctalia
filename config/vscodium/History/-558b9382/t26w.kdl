@@ -165,6 +165,15 @@ window-rule {
     }
 }
 
+window-rule {
+    match app-id="localsend"
+
+    opacity 0.88
+
+    background-effect {
+        blur true
+    }
+}
 
 // Regla de capas para componentes de Noctalia
 layer-rule {
