@@ -4190,7 +4190,6 @@ vim-data-9.2.0780-3.2.noarch
 vim-data-common-9.2.0780-3.2.noarch
 virt-what-1.27-1.6.x86_64
 vlan-1.9-144.8.x86_64
-vlc-3.0.23-7.10.x86_64
 vlc-codec-gstreamer-3.0.23-7.10.x86_64
 vlc-lang-3.0.23-7.10.noarch
 vlc-noX-3.0.23-7.10.x86_64

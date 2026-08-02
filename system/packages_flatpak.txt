@@ -1,4 +1,6 @@
 app.zen_browser.zen	1.21.10b	stable
+com.dec05eba.gpu_screen_recorder	5.15.0	stable
+com.dec05eba.gpu_screen_recorder	5.15.0	stable
 com.github.tchx84.Flatseal	2.4.1	stable
 com.heroicgameslauncher.hgl	v2.22.0	stable
 com.spotify.Client	1.2.92.147.g5b8f9367	stable
@@ -6,6 +8,7 @@ com.stremio.Stremio	1.1.4	stable
 com.valvesoftware.Steam	1.0.0.85	stable
 com.vysp3r.ProtonPlus	0.5.22	stable
 io.gitlab.metadatacleaner.metadatacleaner	4.0.0	stable
+io.mpv.Mpv	v0.41.0	stable
 org.kde.kdenlive	26.04.3	stable
 org.localsend.localsend_app	1.17.0	stable
 org.onlyoffice.desktopeditors	9.4.0	stable
